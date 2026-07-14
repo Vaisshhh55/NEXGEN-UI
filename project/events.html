@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events - NEXGEN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">NEXGEN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="contributors.html">Contributors</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+    <a href="login.html" class="btn signin-btn">Sign In</a>
+  </nav>
+
+  <header class="events-header">
+    <h1>NEXGEN Events Calendar</h1>
+    <p>Join our technical workshops, summits, and cultural celebrations throughout the year.</p>
+  </header>
+
+  <section class="page-content events-section">
+    
+    <div class="filter-bar events-filter-bar">
+      <button class="filter-btn active-filter">All Events</button>
+      <button class="filter-btn">Technical Events</button>
+      <button class="filter-btn">Cultural Events</button>
+    </div>
+
+    
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="event-grid">
+      
+      <div class="event-card upcoming-event" data-category="technical">
+        <img src="events.jpg" alt="Robotics Hackathon" class="event-image">
+        <div class="event-info">
+          <span class="event-date">May 15, 2026</span>
+          <h3>Robotics Hackathon</h3>
+          <p class="event-meta">
+            <span class="event-time">10:00 AM - 5:00 PM</span> | 
+            <span class="event-location">Main Auditorium</span>
+          </p>
+          <p class="event-description">Join us for an exciting robotics competition and showcase your skills! Open to all levels.</p>
+          <a href="register-event.html?id=1" class="btn primary register-event-btn">Register Now</a>
+        </div>
+      </div>
+      
+      <div class="event-card upcoming-event" data-category="technical">
+        <img src="events.jpg" alt="AI & Data Science Summit" class="event-image">
+        <div class="event-info">
+          <span class="event-date">June 3, 2026</span>
+          <h3>AI & Data Science Summit</h3>
+          <p class="event-meta">
+            <span class="event-time">9:00 AM - 4:00 PM</span> | 
+            <span class="event-location">Conference Hall A</span>
+          </p>
+          <p class="event-description">Explore the latest in AI, machine learning, and data science innovations with industry experts.</p>
+          <a href="register-event.html?id=2" class="btn primary register-event-btn">Register Now</a>
+        </div>
+      </div>
+      
+      <div class="event-card upcoming-event" data-category="cultural">
+        <img src="events.jpg" alt="Cultural Fest" class="event-image">
+        <div class="event-info">
+          <span class="event-date">July 20, 2026</span>
+          <h3>Cultural Fest</h3>
+          <p class="event-meta">
+            <span class="event-time">6:00 PM - 9:00 PM</span> | 
+            <span class="event-location">Open Grounds</span>
+          </p>
+          <p class="event-description">Celebrate culture, music, and creativity with all our contributors and students.</p>
+          <a href="register-event.html?id=3" class="btn primary register-event-btn">Get Tickets</a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <h2 class="section-title past-events-title">Past Events</h2>
+    <div class="event-grid past-events-grid">
+      
+      <div class="event-card past-event" data-category="technical">
+        <img src="events.jpg" alt="Past Event" class="event-image">
+        <div class="event-info">
+          <span class="event-date">Feb 10, 2025</span>
+          <h3>IoT Workshop</h3>
+          <p class="event-meta">
+            <span class="event-location">Lab 404</span>
+          </p>
+          <p class="event-description">Hands-on session covering embedded systems and smart prototypes.</p>
+          <a href="gallery.html?event=iot" class="btn secondary view-gallery-btn">View Gallery</a>
+        </div>
+      </div>
+      
+      <div class="event-card past-event" data-category="cultural">
+        <img src="events.jpg" alt="Past Event" class="event-image">
+        <div class="event-info">
+          <span class="event-date">Jan 5, 2025</span>
+          <h3>Annual Founder's Day</h3>
+          <p class="event-meta">
+            <span class="event-location">Main Hall</span>
+          </p>
+          <p class="event-description">A special ceremony honoring our founders and top performers.</p>
+          <a href="gallery.html?event=founders" class="btn secondary view-gallery-btn">View Gallery</a>
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 NEXGEN. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration - NEXGEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NEXGEN</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="contributors.html">Contributors</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <a href="login.html" class="btn signin-btn">Sign In</a>
+    </nav>
+
+    <section class="form-section">
+        <h1 id="event-title">Register </h1> 
+        
+
+        <form onsubmit="handleEventRegister(event)">
+            
+            <input type="hidden" id="event_id" name="event_id" value="1"> 
+            
+            <input type="text" id="regName" placeholder="Full Name" required>
+            <input type="email" id="regEmail" placeholder="Email ID" required>
+            <input type="text" id="regMobile" placeholder="Mobile Number" required>
+            <textarea id="regMessage" placeholder="Any special requests or notes?" rows="3"></textarea>
+            
+            <button type="submit" class="btn primary register-btn">Confirm Event Registration</button>
+            
+            <div class="register-cta">
+                <p>Already registered?</p>
+                <a href="login.html" class="btn secondary">Sign In</a>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 NEXGEN. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

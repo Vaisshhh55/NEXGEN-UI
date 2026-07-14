@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - NEXGEN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">NEXGEN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contributors.html">Contributors</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+  <section class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <h1>Welcome Back</h1>
+        <p>Sign in to access exclusive member features and events.</p>
+      </div>
+
+      <form onsubmit="handleLogin(event)">
+        
+        <input type="email" id="loginEmail" placeholder="Email Address" required>
+        
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        
+        <div class="login-options">
+          <label class="remember-me">
+            <input type="checkbox"> Remember Me
+          </label>
+          <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
+        </div>
+        
+        <button type="submit" class="btn primary login-btn">Secure Login</button>
+      </form>
+      
+      <div class="register-cta">
+        <p>Don't have an account?</p>
+        <a href="register.html" class="btn secondary">Register Here</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function handleLogin(e) {
+      e.preventDefault();
+
+      // Dummy check for demonstration
+      const email = document.getElementById('loginEmail').value;
+      if (email) {
+          // Use a template literal (backticks) so ${email} is interpolated correctly
+          alert(`Login attempt for ${email} successful (dummy action).`);
+          // Redirect in a real scenario: window.location.href = 'dashboard.html';
+      }
+    }
+  </script>
+  
+  <footer class="footer">
+    <p>&copy; 2025 NEXGEN. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

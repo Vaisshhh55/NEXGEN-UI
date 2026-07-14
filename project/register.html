@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - NEXGEN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">NEXGEN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contributors.html">Contributors</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+    <a href="login.html" class="btn signin-btn">Sign In</a> 
+  </nav>
+
+  <section class="page-content form-section">
+    <h1>Register for NEXGEN Community</h1>
+    <form onsubmit="handleRegister(event)">
+      
+      <div class="form-group-inline">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+      </div>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      
+      <input type="email" id="email" name="email" placeholder="Email ID" required>
+      
+      <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" title="10 digit mobile number" required>
+      
+      <label for="certificate">Upload Certificate/Proof of Enrollment (Max 5MB):</label>
+      <input type="file" id="certificate" name="certificate" accept="image/*, .pdf" required>
+      
+      <input type="password" id="password" name="password" placeholder="Create Password" required>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+
+      <button type="submit" class="btn primary register-btn">Submit Registration</button>
+    </form>
+  </section>
+
+  <script>
+    function handleRegister(e) {
+      e.preventDefault();
+      // In a real application, you would collect the data here and send it to a server.
+      alert("Registration form data submitted successfully (dummy action).");
+      // Optionally reset the form: e.target.reset();
+    }
+  </script>
+  
+  <footer class="footer">
+    <p>&copy; 2025 NEXGEN. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
